@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+<type name="Magento\Checkout\Model\Cart">
+    <plugin name="SushilCart" type="Sushil\Assignment2\Model\Product" sortOrder="1" />
+</type>
+    <preference for="Magento\Checkout\Controller\Cart\Add" type="Sushil\Assignment2\Controller\Cart\Add" />
+</config>
